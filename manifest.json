@@ -1,10 +1,231 @@
 {
   "short_name": "ReeferDude",
-  "name": "ReeferDude Platform",
+  "name": "ReeferDude | Digital Brand Systems",
+  "description": "ReeferDude is a premium digital ecosystem focused on trusted commerce infrastructure, digital brand architecture, AI visibility, search optimization, operational systems, and founder-led innovation across discovery, trust, performance, and premium online experiences.",
+  "lang": "en",
+  "dir": "ltr",
+  "id": "/?source=pwa",
   "start_url": "/",
-  "background_color": "#0f172a",
-  "theme_color": "#38bdf8",
+  "scope": "/",
+  "background_color": "#050b14",
+  "theme_color": "#00f5a0",
+  "theme_color_dark": "#00f5a0",
+  "theme_color_light": "#7c3aed",
   "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
   "orientation": "portrait-primary",
-  "scope": "/"
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "categories": [
+    "business",
+    "productivity",
+    "shopping",
+    "lifestyle",
+    "utilities",
+    "travel",
+    "social",
+    "education",
+    "entertainment",
+    "commerce",
+    "technology",
+    "branding",
+    "marketing",
+    "search",
+    "ai",
+    "enterprise",
+    "startup",
+    "digital"
+  ],
+  "icons": [
+    {
+      "src": "/assets/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/screenshots/desktop-home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "ReeferDude digital ecosystem landing page"
+    },
+    {
+      "src": "/assets/screenshots/desktop-brand.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Brand architecture and trust-focused product experience"
+    },
+    {
+      "src": "/assets/screenshots/mobile-home.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile-first platform experience for ReeferDude"
+    },
+    {
+      "src": "/assets/screenshots/mobile-directory.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Directory and discovery view for mobile users"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Open the ReeferDude home experience and primary landing page.",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/assets/icons/shortcut-home.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Marketplace",
+      "short_name": "Market",
+      "description": "Open the marketplace and discovery experience for products and brand listings.",
+      "url": "/marketplace",
+      "icons": [
+        {
+          "src": "/assets/icons/shortcut-market.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Directory",
+      "short_name": "Directory",
+      "description": "Browse trusted directory and catalog views across the ReeferDude platform.",
+      "url": "/directory",
+      "icons": [
+        {
+          "src": "/assets/icons/shortcut-directory.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Go directly to the contact and trust communication channels.",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/assets/icons/shortcut-contact.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "files",
+          "accept": [
+            "image/*",
+            "video/*",
+            "text/*"
+          ]
+        }
+      ]
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+reeferdude",
+      "url": "/open?target=%s"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/upload",
+      "accept": {
+        "application/json": [
+          ".json"
+        ],
+        "text/plain": [
+          ".txt"
+        ],
+        "image/png": [
+          ".png"
+        ],
+        "image/jpeg": [
+          ".jpg",
+          ".jpeg"
+        ]
+      }
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "handle_links": "preferred",
+  "edge_side_panel": {
+    "preferred_width": 420
+  }
 }
