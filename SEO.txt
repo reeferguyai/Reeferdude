@@ -1,6 +1,3 @@
-Site Name: ReeferDude
-Canonical Domain: https://reeferdude.com
 Sitemap: https://reeferdude.com/sitemap.xml
 User-agent: *
 Allow: /
-Brand-Owners: Raymond Meadows, Jessica Mullins

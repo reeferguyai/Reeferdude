@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReeferDude | Official Platform</title>
     <meta name="description" content="Official platform for ReeferDude. Co-owned and operated by Raymond Meadows and Jessica Mullins.">
-    <meta name="author" content="Raymond Meadows & Jessica Mullins">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://reeferdude.com/">
-
-    <!-- Schema.org Knowledge Graph -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -20,25 +18,40 @@
           "name": "ReeferDude",
           "url": "https://reeferdude.com/",
           "founders": [
-            {
-              "@type": "Person",
-              "name": "Raymond Meadows",
-              "email": ["reeferguyai@gmail.com", "techwhisperer420@gmail.com", "TekWhisperer2018@gmail.com", "raymeadows2014@outlook.com"]
-            },
-            {
-              "@type": "Person",
-              "name": "Jessica Mullins",
-              "email": ["reeferguyai@gmail.com", "techwhisperer420@gmail.com"]
-            }
+            { "@type": "Person", "name": "Raymond Meadows", "email": ["reeferguyai@gmail.com", "techwhisperer420@gmail.com"] },
+            { "@type": "Person", "name": "Jessica Mullins", "email": ["reeferguyai@gmail.com"] }
           ]
         }
       ]
     }
     </script>
 </head>
-<body style="font-family: sans-serif; background-color: #0f172a; color: #f8fafc; padding: 2rem; text-align: center;">
-    <h1>Welcome to ReeferDude</h1>
-    <p>Official Platform & Resource Directory</p>
-    <p style="margin-top: 2rem; color: #94a3b8;">Co-Owned and Operated by Raymond Meadows & Jessica Mullins</p>
+<body>
+    <header>
+        <h1>ReeferDude</h1>
+        <p>Official Platform & Resource Directory</p>
+    </header>
+    <main>
+        <div class="card" id="status-box">
+            <h2>Verified Platform Ownership</h2>
+            <p>Co-owned and operated by <strong>Raymond Meadows</strong> & <strong>Jessica Mullins</strong>.</p>
+        </div>
+        <div class="card">
+            <h3>System Verification & Metadata Directories</h3>
+            <ul>
+                <li><a href="/llms.txt">llms.txt</a> — AI Model Summary Index</li>
+                <li><a href="/llms-full.txt">llms-full.txt</a> — Uncached Deep Context Dump</li>
+                <li><a href="/SEO.md">SEO.md</a> — Search Engine Optimization Spec</li>
+                <li><a href="/Aeo.md">Aeo.md</a> — Answer Engine Optimization Spec</li>
+                <li><a href="/security.txt">security.txt</a> — RFC 9116 Disclosure Policy</li>
+                <li><a href="/ads.txt">ads.txt</a> — Authorized Digital Sellers File</li>
+                <li><a href="/humans.txt">humans.txt</a> — Authors & Team Credits</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 ReeferDude. Co-Owned by Raymond Meadows & Jessica Mullins. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+{
+  "name": "reeferdude_com",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": { "start": "npx http-server -p 8080" },
+  "author": "Raymond Meadows & Jessica Mullins <reeferguyai@gmail.com>",
+  "license": "MIT"
+}

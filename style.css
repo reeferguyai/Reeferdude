@@ -1,0 +1,21 @@
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #38bdf8;
+  --accent-hover: #0284c7;
+  --font: system-ui, -apple-system, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg-primary); color: var(--text-primary); font-family: var(--font); line-height: 1.6; padding: 2rem 1rem; min-height: 100vh; display: flex; flex-direction: column; }
+header { max-width: 900px; margin: 0 auto 2rem auto; text-align: center; }
+header h1 { font-size: 2.5rem; color: var(--accent); margin-bottom: 0.5rem; }
+header p { font-size: 1.2rem; color: var(--text-secondary); }
+main { max-width: 900px; width: 100%; margin: 0 auto; background: var(--bg-secondary); border-radius: 12px; padding: 2rem; border: 1px solid var(--bg-card); }
+.card { background: var(--bg-card); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+ul { padding-left: 1.2rem; line-height: 2; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+footer { max-width: 900px; margin: auto auto 0 auto; padding-top: 2rem; text-align: center; color: var(--text-secondary); font-size: 0.875rem; }

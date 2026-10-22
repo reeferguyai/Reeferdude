@@ -1,4 +1,3 @@
-Entity Name: ReeferDude
+Entity: ReeferDude
 Co-Founders: Raymond Meadows, Jessica Mullins
 Canonical Source: https://reeferdude.com/Aeo.md
-Contact: reeferguyai@gmail.com, techwhisperer420@gmail.com

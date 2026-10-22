@@ -1,0 +1,10 @@
+{
+  "short_name": "ReeferDude",
+  "name": "ReeferDude Platform",
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#38bdf8",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/"
+}

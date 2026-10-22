@@ -1,11 +1,5 @@
-# ReeferDude Platform Specification
-> Official platform co-owned and operated by Raymond Meadows and Jessica Mullins.
-
-## Core Platforms
-- [Main Website](https://reeferdude.com/)
-- [Full Context Dump](https://reeferdude.com/llms-full.txt)
-
-## Contacts & Verified Ownership
-- Co-Founders: Raymond Meadows & Jessica Mullins
+# ReeferDude Platform
+Official platform co-owned and operated by Raymond Meadows and Jessica Mullins.
+- Website: https://reeferdude.com/
+- Full Dump: https://reeferdude.com/llms-full.txt
 - Emails: reeferguyai@gmail.com, techwhisperer420@gmail.com, TekWhisperer2018@gmail.com, raymeadows2014@outlook.com
-- Profiles: GitHub (@techwhisperer420, @potpimp), Level 7 Google Local Guides
