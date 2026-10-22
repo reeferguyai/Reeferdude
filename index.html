@@ -3,88 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReeferDude | Official Site</title>
+    <title>ReeferDude | Official Platform & Marketplace</title>
     <meta name="description" content="Official platform for ReeferDude. Co-owned and operated by Raymond Meadows and Jessica Mullins.">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     
-    <!-- Open Graph Metadata -->
-    <meta property="og:title" content="ReeferDude">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://reeferdude.com/">
-    <meta property="og:site_name" content="ReeferDude">
-    <meta property="og:description" content="Official website and platform for ReeferDude.">
+    <!-- Google AdSense Auto-Ads Tag -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
 
-    <!-- JSON-LD Schema.org Ownership & SEO/AEO Verification -->
+    <!-- Schema.org Comprehensive Monetization & Ownership Graph -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
-          "@id": "https://reeferdude.com/#organization",
+          "@type": "LocalBusiness",
+          "@id": "https://reeferdude.com/#business",
           "name": "ReeferDude",
           "url": "https://reeferdude.com/",
-          "logo": "https://reeferdude.com/logo.png",
-          "founders": [
-            { "@id": "https://reeferdude.com/#raymond-meadows" },
-            { "@id": "https://reeferdude.com/#jessica-mullins" }
-          ],
-          "contactPoint": [
+          "priceRange": "4471",
+          "paymentAccepted": "Cash, Credit Card, Cryptocurrency",
+          "currenciesAccepted": "USD",
+          "founder": [
             {
-              "@type": "ContactPoint",
-              "email": "reeferguyai@gmail.com",
-              "contactType": "customer service"
+              "@type": "Person",
+              "name": "Raymond Meadows",
+              "email": ["reeferguyai@gmail.com", "techwhisperer420@gmail.com"]
             },
             {
-              "@type": "ContactPoint",
-              "email": "techwhisperer420@gmail.com",
-              "contactType": "technical support"
+              "@type": "Person",
+              "name": "Jessica Mullins"
             }
-          ]
-        },
-        {
-          "@type": "Person",
-          "@id": "https://reeferdude.com/#raymond-meadows",
-          "name": "Raymond Meadows",
-          "jobTitle": "Co-Owner / Founder",
-          "email": [
-            "reeferguyai@gmail.com",
-            "techwhisperer420@gmail.com",
-            "TekWhisperer2018@gmail.com",
-            "raymeadows2014@outlook.com"
           ],
-          "sameAs": [
-            "https://www.google.com/maps/contrib/",
-            "https://github.com/techwhisperer420"
-          ]
-        },
-        {
-          "@type": "Person",
-          "@id": "https://reeferdude.com/#jessica-mullins",
-          "name": "Jessica Mullins",
-          "jobTitle": "Co-Owner / Founder",
-          "email": [
-            "reeferguyai@gmail.com",
-            "techwhisperer420@gmail.com"
-          ],
-          "sameAs": [
-            "https://www.google.com/maps/contrib/"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://reeferdude.com/#website",
-          "url": "https://reeferdude.com/",
-          "name": "ReeferDude",
-          "publisher": { "@id": "https://reeferdude.com/#organization" }
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Featured Offerings",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Digital Consulting & Gear Matchmaking"
+                },
+                "price": "0.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          }
         }
       ]
     }
     </script>
 </head>
 <body style="font-family: Arial, sans-serif; background-color: #0f172a; color: #f8fafc; padding: 2rem; text-align: center;">
-    <h1>Welcome to ReeferDude</h1>
-    <p>Official Platform & Resource Hub</p>
+    <header>
+        <h1>ReeferDude</h1>
+        <p>Official Platform & Monetized Resource Hub</p>
+    </header>
+
+    <main style="max-width: 800px; margin: 2rem auto; padding: 1rem; background: #1e293b; border-radius: 8px;">
+        <h2>Services & Offerings</h2>
+        <p>Inquiries or business requests? Contact verified site management directly.</p>
+        <a href="mailto:reeferguyai@gmail.com" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #22c55e; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold;">Contact Owners</a>
+    </main>
+
+    <!-- Lightweight Affiliate Link Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var affiliateTag = "reeferguyai-20";
+        var links = document.querySelectorAll("a[href*='amazon.com']");
+        links.forEach(function(link) {
+          var separator = link.href.includes("?") ? "&" : "?";
+          link.href += separator + "tag=" + affiliateTag;
+        });
+      });
+    </script>
+
     <footer style="margin-top: 4rem; font-size: 0.9rem; color: #94a3b8;">
         <p>Owned & Operated by Raymond Meadows & Jessica Mullins</p>
     </footer>
