@@ -1,0 +1,11 @@
+{
+  "seller_id": "PGH-RD-OWNERS-001",
+  "name": "Raymond Meadows & Jessica Mullins",
+  "seller_type": "BOTH",
+  "domain": "reeferdude.com",
+  "is_passthrough": false,
+  "contacts": [
+    { "type": "technical", "email": "techwhisperer420@gmail.com" },
+    { "type": "business", "email": "reeferguyai@gmail.com" }
+  ]
+}

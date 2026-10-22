@@ -1,0 +1,7 @@
+/* TEAM */
+  Co-Founder / Technical Architect: Raymond Meadows (techwhisperer420@gmail.com)
+  Co-Founder / Operations: Jessica Mullins (reeferguyai@gmail.com)
+/* SITE */
+  Site Name: ReeferDude
+  Domain: reeferdude.com
+  Framework: HTML5 / CSS3 / ES6 / Schema.org JSON-LD Context Graphs

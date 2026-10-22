@@ -1,2 +1,8 @@
-# Authorized Digital Sellers for reeferdude.com
-google.com, ca-pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# AUTHORIZED DIGITAL SELLERS SPECIFICATION (ads.txt v1.1)
+# Domain: reeferdude.com
+google.com, ca-pub-0000000000000000, DIRECT, f08c47fec0942fa0
+openx.com, 537123456, DIRECT, 6a698e2ec38604c6
+rubiconproject.com, 10012, DIRECT, 0bf1b92d2b82643e
+pubmatic.com, 156000, DIRECT, 5d62f7cb22cb2838
+appnexus.com, 9876, DIRECT, f5c7d812328054c2
+amazon.com, 3019, DIRECT
