@@ -1,8 +1,154 @@
-requests>=2.31.0
-beautifulsoup4>=4.12.2
-lxml>=4.9.3
-jinja2>=3.1.2
-pydantic>=2.5.0
-gitpython>=3.1.40
-google-api-python-client>=2.100.0
-python-dotenv>=1.0.0
+# PotGrowHub.store — Advanced Python Requirements
+# Project: PotGrowHub.store / reeferdude.com
+# Purpose: AI budtender, cultivation intelligence, API backend, ecommerce services,
+# data processing, authentication, security, analytics, automation, and testing.
+# Python: 3.11+
+# Cost policy: Free/open-source-first; no paid API subscription required by this file.
+
+# ============================================================
+# 01. CORE FRAMEWORK AND ASYNCHRONOUS RUNTIME
+# ============================================================
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.30.0,<1.0.0
+starlette>=0.40.0,<1.0.0
+anyio>=4.4.0,<5.0.0
+aiofiles>=24.1.0
+websockets>=13.0
+sse-starlette>=2.1.0
+
+# ============================================================
+# 02. CONFIGURATION, ENVIRONMENT, AND DATA VALIDATION
+# ============================================================
+pydantic>=2.9.0,<3.0.0
+pydantic-settings>=2.5.0,<3.0.0
+python-dotenv>=1.0.1
+email-validator>=2.2.0
+typing-extensions>=4.12.0
+
+# ============================================================
+# 03. DATABASES, ORM, MIGRATIONS, AND CONNECTION POOLS
+# ============================================================
+SQLAlchemy>=2.0.35,<3.0.0
+alembic>=1.13.0,<2.0.0
+aiosqlite>=0.20.0
+psycopg[binary]>=3.2.0,<4.0.0
+asyncpg>=0.29.0
+greenlet>=3.1.0
+
+# ============================================================
+# 04. AUTHENTICATION, PASSWORDS, TOKENS, AND AUTHORIZATION
+# ============================================================
+PyJWT>=2.9.0,<3.0.0
+pwdlib[argon2]>=0.2.0
+argon2-cffi>=23.1.0
+cryptography>=43.0.0
+itsdangerous>=2.2.0
+
+# ============================================================
+# 05. API SECURITY, VALIDATION, AND REQUEST PROTECTION
+# ============================================================
+slowapi>=0.1.9
+bleach>=6.1.0
+defusedxml>=0.7.1
+python-multipart>=0.0.12
+secure>=1.0.1
+
+# ============================================================
+# 06. HTTP CLIENTS, RETRIES, AND RESILIENT SERVICE CALLS
+# ============================================================
+httpx>=0.27.2,<1.0.0
+requests>=2.32.0,<3.0.0
+tenacity>=9.0.0
+urllib3>=2.2.0,<3.0.0
+
+# ============================================================
+# 07. LOGGING, TELEMETRY, HEALTH, AND OBSERVABILITY
+# ============================================================
+structlog>=24.4.0
+prometheus-client>=0.21.0
+orjson>=3.10.0
+rich>=13.8.0
+
+# ============================================================
+# 08. CACHE AND OPTIONAL DISTRIBUTED BACKGROUND SERVICES
+# ============================================================
+redis>=5.1.0,<7.0.0
+celery>=5.4.0,<6.0.0
+APScheduler>=3.10.4,<4.0.0
+
+# ============================================================
+# 09. AI SERVICE INTEGRATION AND RETRIEVAL FOUNDATIONS
+# Core packages do not require a paid model API or hosted AI service.
+# ============================================================
+numpy>=1.26.0,<3.0.0
+scikit-learn>=1.5.0,<2.0.0
+
+# ============================================================
+# 10. DOCUMENT INGESTION AND KNOWLEDGE-BASE PROCESSING
+# ============================================================
+pypdf>=5.0.0
+python-docx>=1.1.2
+openpyxl>=3.1.5
+pandas>=2.2.0,<4.0.0
+beautifulsoup4>=4.12.3
+lxml>=5.3.0
+markdown>=3.7
+PyYAML>=6.0.2
+chardet>=5.2.0
+
+# ============================================================
+# 11. IMAGE, MEDIA, AND UPLOAD PROCESSING
+# ============================================================
+Pillow>=10.4.0
+filetype>=1.2.0
+
+# ============================================================
+# 12. TEMPLATES, EMAIL, AND SERVER-RENDERED PAGES
+# ============================================================
+Jinja2>=3.1.4
+MarkupSafe>=2.1.5
+
+# ============================================================
+# 13. API DOCUMENTATION AND SCHEMA UTILITIES
+# FastAPI provides OpenAPI generation; these support schema workflows.
+# ============================================================
+jsonschema>=4.23.0
+referencing>=0.35.0
+
+# ============================================================
+# 14. TESTING, MOCKING, AND API VERIFICATION
+# ============================================================
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+pytest-cov>=5.0.0
+httpx>=0.27.2,<1.0.0
+respx>=0.21.0
+
+# ============================================================
+# 15. CODE QUALITY, FORMATTING, AND STATIC ANALYSIS
+# ============================================================
+ruff>=0.7.0
+mypy>=1.11.0
+bandit>=1.7.9
+pip-audit>=2.7.3
+
+# ============================================================
+# 16. TYPE STUBS AND DEVELOPMENT SUPPORT
+# ============================================================
+types-PyYAML>=6.0.12
+types-requests>=2.32.0
+types-bleach>=6.2.0
+
+# ============================================================
+# 17. OPTIONAL INTEGRATION NOTES
+# ============================================================
+# PostgreSQL: configure DATABASE_URL and use psycopg or asyncpg.
+# SQLite: use aiosqlite for asynchronous database access.
+# Redis/Celery: configure a Redis service before enabling background jobs.
+# AI models: select a locally runnable model and install its compatible runtime
+# separately; large model frameworks are intentionally excluded from this file.
+# Voice/STT/TTS: add platform-compatible speech packages only when implemented.
+# Payments: use a chosen provider's official SDK only after selecting the provider.
+# Analytics: collect only necessary data and document consent and retention.
+# Browser automation: install Playwright and its browser binaries separately if needed.
+# Production: use a lock file, pinned deployment dependencies, and vulnerability checks.
