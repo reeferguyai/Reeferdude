@@ -1,3 +1,521 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://reeferdude.com/sitemap.xml
+Sitemap: https://potgrowhub.store/sitemap.xml
+
+# ============================================================
+# POTGROWHUB.STORE — ROBOTS.TXT
+# RIDE OR DIE HUSTLE CONFIG
+# Status: Active
+# Mission: Search Engine Discovery, Crawl Management, and
+# Technical SEO Support
+# Policy: Public Pages Accessible Unless Explicitly Restricted
+# ============================================================
+
+# ------------------------------------------------------------
+# GENERAL CRAWLING POLICY
+# ------------------------------------------------------------
+
+User-agent: *
+Allow: /
+
+# Allow public website pages
+Allow: /*.html$
+Allow: /*.htm$
+Allow: /*.php$
+Allow: /*.xml$
+Allow: /*.txt$
+Allow: /*.webmanifest$
+Allow: /*.json$
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.avif$
+Allow: /*.svg$
+Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+Allow: /*.otf$
+Allow: /*.eot$
+
+# ------------------------------------------------------------
+# CRAWLER ACCESS TO CORE SEO RESOURCES
+# ------------------------------------------------------------
+
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /sitemap_index.xml
+Allow: /sitemap-index.xml
+Allow: /humans.txt
+Allow: /security.txt
+Allow: /.well-known/security.txt
+Allow: /manifest.json
+Allow: /manifest.webmanifest
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai.txt
+Allow: /seo.txt
+Allow: /aeo.txt
+
+# ------------------------------------------------------------
+# PUBLIC BRAND AND WEBSITE ASSETS
+# ------------------------------------------------------------
+
+Allow: /assets/
+Allow: /assets/images/
+Allow: /assets/icons/
+Allow: /assets/fonts/
+Allow: /images/
+Allow: /icons/
+Allow: /fonts/
+Allow: /css/
+Allow: /js/
+Allow: /styles/
+Allow: /scripts/
+Allow: /public/
+Allow: /media/
+Allow: /uploads/public/
+
+# ------------------------------------------------------------
+# POTGROWHUB.STORE SITEMAP DISCOVERY
+# ------------------------------------------------------------
+
+Sitemap: https://potgrowhub.store/sitemap.xml
+
+# Optional sitemap index declarations.
+# Keep these only if the corresponding files exist and return HTTP 200.
+# Sitemap: https://potgrowhub.store/sitemap_index.xml
+# Sitemap: https://potgrowhub.store/sitemap-index.xml
+# Sitemap: https://potgrowhub.store/page-sitemap.xml
+# Sitemap: https://potgrowhub.store/post-sitemap.xml
+# Sitemap: https://potgrowhub.store/product-sitemap.xml
+# Sitemap: https://potgrowhub.store/category-sitemap.xml
+# Sitemap: https://potgrowhub.store/image-sitemap.xml
+# Sitemap: https://potgrowhub.store/video-sitemap.xml
+# Sitemap: https://potgrowhub.store/news-sitemap.xml
+
+# ------------------------------------------------------------
+# REEFERDUDE.COM SITEMAP DISCOVERY
+# ------------------------------------------------------------
+
+Sitemap: https://reeferdude.com/sitemap.xml
+
+# Optional sitemap declarations.
+# Keep these only if the corresponding files exist and return HTTP 200.
+# Sitemap: https://reeferdude.com/sitemap_index.xml
+# Sitemap: https://reeferdude.com/sitemap-index.xml
+# Sitemap: https://reeferdude.com/page-sitemap.xml
+# Sitemap: https://reeferdude.com/post-sitemap.xml
+# Sitemap: https://reeferdude.com/product-sitemap.xml
+# Sitemap: https://reeferdude.com/image-sitemap.xml
+
+# ------------------------------------------------------------
+# PRIVATE AND INTERNAL APPLICATION PATHS
+# ------------------------------------------------------------
+
+# These restrictions are examples. Enable only when these paths
+# actually exist and contain non-public application interfaces.
+# Robots.txt is public and is not an access-control mechanism.
+# Use authentication and server-side authorization for private data.
+
+# Disallow: /admin/
+# Disallow: /administrator/
+# Disallow: /backend/
+# Disallow: /internal/
+# Disallow: /private/
+# Disallow: /staff/
+# Disallow: /dashboard/
+# Disallow: /control-panel/
+# Disallow: /management/
+# Disallow: /moderation/
+# Disallow: /account/
+# Disallow: /profile/
+# Disallow: /settings/
+# Disallow: /members/
+# Disallow: /member/
+# Disallow: /user/
+# Disallow: /users/
+# Disallow: /login/
+# Disallow: /logout/
+# Disallow: /register/
+# Disallow: /signup/
+# Disallow: /password-reset/
+# Disallow: /reset-password/
+# Disallow: /forgot-password/
+# Disallow: /auth/
+# Disallow: /oauth/
+# Disallow: /session/
+
+# ------------------------------------------------------------
+# SHOPPING, CART, CHECKOUT, AND CUSTOMER TRANSACTIONS
+# ------------------------------------------------------------
+
+# Review these rules against the actual application before enabling.
+# Public product and category pages should generally remain crawlable.
+# Do not rely on robots.txt to protect customer or payment information.
+
+# Disallow: /cart/
+# Disallow: /checkout/
+# Disallow: /order/
+# Disallow: /orders/
+# Disallow: /payment/
+# Disallow: /payments/
+# Disallow: /billing/
+# Disallow: /invoice/
+# Disallow: /invoices/
+# Disallow: /customer/
+# Disallow: /customers/
+# Disallow: /wishlist/
+# Disallow: /compare/
+# Disallow: /track-order/
+# Disallow: /order-confirmation/
+# Disallow: /purchase-confirmation/
+
+# ------------------------------------------------------------
+# SEARCH RESULTS AND URL PARAMETER MANAGEMENT
+# ------------------------------------------------------------
+
+# Search pages can create large numbers of low-value URLs.
+# Decide whether internal search pages deserve indexing before
+# enabling any restrictions. Use canonical tags and noindex where
+# appropriate; robots.txt cannot enforce a noindex directive.
+
+# Disallow: /search/
+# Disallow: /?s=
+# Disallow: /search?
+# Disallow: /*?search=
+# Disallow: /*&search=
+# Disallow: /*?q=
+# Disallow: /*&q=
+# Disallow: /*?query=
+# Disallow: /*&query=
+
+# ------------------------------------------------------------
+# FILTERS, SORTING, AND FACETED NAVIGATION
+# ------------------------------------------------------------
+
+# Enable only after confirming the site's URL structure.
+# Do not block useful landing pages or product URLs accidentally.
+
+# Disallow: /*?sort=
+# Disallow: /*&sort=
+# Disallow: /*?filter=
+# Disallow: /*&filter=
+# Disallow: /*?orderby=
+# Disallow: /*&orderby=
+# Disallow: /*?price_min=
+# Disallow: /*&price_min=
+# Disallow: /*?price_max=
+# Disallow: /*&price_max=
+# Disallow: /*?rating=
+# Disallow: /*&rating=
+# Disallow: /*?color=
+# Disallow: /*&color=
+# Disallow: /*?size=
+# Disallow: /*&size=
+# Disallow: /*?page_size=
+# Disallow: /*&page_size=
+
+# ------------------------------------------------------------
+# TRACKING PARAMETERS
+# ------------------------------------------------------------
+
+# Avoid unnecessarily crawling duplicate tracking URLs when
+# compatible with your analytics and canonicalization strategy.
+# These are optional examples, not mandatory blocking rules.
+
+# Disallow: /*?utm_source=
+# Disallow: /*&utm_source=
+# Disallow: /*?utm_medium=
+# Disallow: /*&utm_medium=
+# Disallow: /*?utm_campaign=
+# Disallow: /*&utm_campaign=
+# Disallow: /*?utm_term=
+# Disallow: /*&utm_term=
+# Disallow: /*?utm_content=
+# Disallow: /*&utm_content=
+# Disallow: /*?gclid=
+# Disallow: /*&gclid=
+# Disallow: /*?fbclid=
+# Disallow: /*&fbclid=
+# Disallow: /*?msclkid=
+# Disallow: /*&msclkid=
+
+# ------------------------------------------------------------
+# API, DEBUGGING, AND DEVELOPMENT ENDPOINTS
+# ------------------------------------------------------------
+
+# Restrict crawling of internal endpoints only when they exist.
+# Public APIs intended for discovery or documentation may need
+# different handling. Secure every sensitive endpoint separately.
+
+# Disallow: /api/
+# Disallow: /internal-api/
+# Disallow: /graphql
+# Disallow: /debug/
+# Disallow: /debugbar/
+# Disallow: /test/
+# Disallow: /tests/
+# Disallow: /testing/
+# Disallow: /staging/
+# Disallow: /development/
+# Disallow: /dev/
+# Disallow: /sandbox/
+# Disallow: /logs/
+# Disallow: /tmp/
+# Disallow: /temp/
+# Disallow: /cache/
+# Disallow: /backups/
+# Disallow: /backup/
+# Disallow: /database/
+# Disallow: /migrations/
+# Disallow: /secrets/
+# Disallow: /credentials/
+
+# ------------------------------------------------------------
+# AI, GANJAGURU, AND CONVERSATIONAL FEATURES
+# ------------------------------------------------------------
+
+# Keep public GanjaGuru landing pages, educational content, and
+# documented features accessible to search engines.
+# Restrict private sessions and account-specific content only
+# after verifying the real routes used by the application.
+
+# Disallow: /ai/private/
+# Disallow: /ai/internal/
+# Disallow: /ganjaguru/private/
+# Disallow: /ganjaguru/internal/
+# Disallow: /chat/private/
+# Disallow: /chat/history/
+# Disallow: /conversation/private/
+# Disallow: /conversations/
+# Disallow: /session-history/
+# Disallow: /prompt-library/private/
+# Disallow: /model-training/private/
+# Disallow: /datasets/private/
+
+# ------------------------------------------------------------
+# FILE UPLOADS AND USER-GENERATED CONTENT
+# ------------------------------------------------------------
+
+# Publicly published resources may be crawlable.
+# Private uploads, unpublished drafts, and user-specific files
+# must be protected with server-side permissions.
+
+# Disallow: /uploads/private/
+# Disallow: /uploads/temp/
+# Disallow: /uploads/drafts/
+# Disallow: /files/private/
+# Disallow: /documents/private/
+# Disallow: /attachments/private/
+# Disallow: /user-content/private/
+
+# ------------------------------------------------------------
+# DUPLICATE AND LOW-VALUE CONTENT
+# ------------------------------------------------------------
+
+# Review thin, duplicate, or automatically generated pages using
+# canonical tags, redirects, quality improvements, or noindex rules.
+# Do not block important assets needed to render public pages.
+
+# Disallow: /tag/
+# Disallow: /author/
+# Disallow: /feed/
+# Disallow: /comments/feed/
+# Disallow: /trackback/
+# Disallow: /print/
+# Disallow: /preview/
+# Disallow: /preview=true
+# Disallow: /*?preview=
+# Disallow: /*&preview=
+# Disallow: /*?replytocom=
+# Disallow: /*&replytocom=
+
+# ------------------------------------------------------------
+# WORDPRESS-SPECIFIC OPTIONAL RULES
+# ------------------------------------------------------------
+
+# Use only if the website actually runs WordPress and the paths
+# match the installation. Do not block public assets needed for
+# page rendering or functionality.
+
+# Disallow: /wp-admin/
+# Allow: /wp-admin/admin-ajax.php
+# Disallow: /wp-login.php
+# Disallow: /wp-register.php
+# Disallow: /xmlrpc.php
+# Disallow: /wp-content/cache/
+# Disallow: /wp-content/upgrade/
+# Allow: /wp-content/uploads/
+
+# ------------------------------------------------------------
+# CRAWLER-SPECIFIC POLICIES
+# ------------------------------------------------------------
+
+# Google Search
+User-agent: Googlebot
+Allow: /
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Google News
+User-agent: Googlebot-News
+Allow: /
+
+# Bing Search
+User-agent: Bingbot
+Allow: /
+
+# DuckDuckGo-associated crawler
+User-agent: DuckDuckBot
+Allow: /
+
+# Apple search crawler
+User-agent: Applebot
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Internet Archive
+User-agent: ia_archiver
+Allow: /
+
+# OpenAI search crawler
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI user-initiated fetcher
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic search crawler
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity search crawler
+User-agent: PerplexityBot
+Allow: /
+
+# You.com crawler
+User-agent: YouBot
+Allow: /
+
+# ------------------------------------------------------------
+# AI TRAINING AND DATA COLLECTION POLICY NOTES
+# ------------------------------------------------------------
+
+# Search crawling, user-initiated fetching, and model training are
+# different activities. These entries are not a universal opt-in
+# or opt-out for every AI company, crawler, or downstream service.
+# Add crawler-specific disallow rules only when the applicable
+# provider documents the user-agent and the desired policy.
+#
+# Examples for review; uncomment only when these match your policy:
+#
+# User-agent: GPTBot
+# Disallow: /
+#
+# User-agent: ClaudeBot
+# Disallow: /
+#
+# User-agent: Google-Extended
+# Disallow: /
+#
+# User-agent: Bytespider
+# Disallow: /
+#
+# User-agent: Amazonbot
+# Disallow: /
+
+# ------------------------------------------------------------
+# CRAWL BUDGET AND SERVER HEALTH
+# ------------------------------------------------------------
+
+# Avoid adding a generic Crawl-delay rule without checking the
+# target crawler's documentation. Search engines differ in support.
+# If the server is overloaded, use verified crawler controls and
+# server-side rate limiting rather than relying on this file alone.
+
+# Crawl-delay: 10
+
+# ------------------------------------------------------------
+# SEARCH ENGINE INDEXING AND CANONICALIZATION NOTES
+# ------------------------------------------------------------
+
+# Robots.txt controls crawler access; it does not guarantee that
+# a URL will be excluded from search results.
+#
+# Use HTML meta robots or X-Robots-Tag for noindex directives.
+# A crawler must be allowed to fetch a page to reliably see a
+# page-level noindex directive.
+#
+# Use canonical link elements for duplicate public pages.
+# Use HTTP 301 redirects when a URL has permanently moved.
+# Submit only preferred, canonical, indexable URLs in sitemaps.
+# Keep sitemap URLs absolute and use the correct HTTPS hostname.
+# Do not publish private URLs in sitemaps.
+# Ensure sitemap files return HTTP 200 and valid XML.
+# Keep robots.txt available at each domain's root.
+
+# ------------------------------------------------------------
+# ACCESSIBILITY, PERFORMANCE, AND RENDERING
+# ------------------------------------------------------------
+
+# Allow public CSS and JavaScript required to render pages.
+# Allow public images, fonts, and icons used by the interface.
+# Do not disallow entire asset directories without testing.
+# Ensure mobile and desktop pages render usable content.
+# Ensure essential content is available without requiring login.
+# Use server-side protection for private application resources.
+
+# ------------------------------------------------------------
+# CANNABIS CONTENT AND RESPONSIBLE INFORMATION
+# ------------------------------------------------------------
+
+# Public educational material may remain crawlable where lawful.
+# Publish accurate, responsible, age-appropriate information.
+# Do not use robots.txt as an age gate or legal compliance system.
+# Apply age restrictions, geographic controls, and purchase rules
+# in the application and server configuration where required.
+# Keep jurisdiction-specific legal information accurate and dated.
+# Do not expose private customer, payment, or health-related data.
+
+# ------------------------------------------------------------
+# PRIVACY AND SECURITY
+# ------------------------------------------------------------
+
+# Never publish passwords, API keys, tokens, or private credentials.
+# Robots.txt is publicly readable and must not contain secrets.
+# Blocking a path does not prevent direct access to its contents.
+# Use authentication, authorization, and correct server permissions.
+# Avoid exposing backups, logs, environment files, or database dumps.
+# Return appropriate HTTP status codes for private and missing URLs.
+
+# ------------------------------------------------------------
+# MAINTENANCE AND VALIDATION
+# ------------------------------------------------------------
+
+# Review robots.txt after major routing or platform changes.
+# Test important URLs with the relevant search engine tools.
+# Verify sitemap URLs and canonical hostnames.
+# Confirm all listed public files exist before publishing.
+# Remove obsolete rules and nonexistent sitemap declarations.
+# Keep a version-controlled copy of this file.
+# Re-test after deployments, redirects, domain changes, or migrations.
+
+# ------------------------------------------------------------
+# FINAL DISCOVERY DECLARATIONS
+# ------------------------------------------------------------
+
+Sitemap: https://reeferdude.com/sitemap.xml
+Sitemap: https://potgrowhub.store/sitemap.xml
