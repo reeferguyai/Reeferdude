@@ -1,12 +1,90 @@
-# ReeferDude Platform
+# ReeferDude
 
-Website: https://reeferdude.com/
-Official platform co-owned and operated by Ray Meadows and Jessica Mullins.
+ReeferDude is a flagship hemp brand founded by Ray Meadows and Jessica Mullins. Hemp-derived products only. No actual cannabis is sold. 18+ only.
 
-Hemp-derived products only. No actual cannabis is sold. 18+ only.
-
-## Pages in this repository
-
-- [ReeferDude — Let AI Grow It, You Smoke It | AI Budtender, Strain Lab, Grow Blueprints](https://reeferdude.com/) — ReeferDude is the AI budtender flagship at reeferdude.com: a cannabis-infused chat where a floating avatar's smoke forms the menu — strain matching, a 3D print-on-demand Design Studio, grow-room blueprinting, a ghost marketplace, delivery and consultations. The store engine lives at potgrowhub.store. Let AI Grow It, You Smoke It.
-
-Note: additional pages are staged for this brand but are not listed here, because they are not in this repository. Listing pages that do not exist here is what made the previous sitemap wrong.
+- [ReeferDude — Let AI Grow It, You Smoke It | AI Budtender, Strain Lab, Grow Blueprints](https://reeferdude.com/): ReeferDude is the AI budtender flagship at reeferdude.com: a cannabis-infused chat where a floating avatar's smoke forms the menu — strain matching, a 3D print-on-demand Design Studio, grow-room blueprinting, a ghost marketplace, delivery and consultations. The store engine lives at potgrowhub.store. Let AI Grow It, You Smoke It.
+- [About | ReeferDude](https://reeferdude.com/about/): About ReeferDude: a flagship hemp brand founded by Ray Meadows and Jessica Mullins, built for learning, community, and the future.
+- [Accessibility | ReeferDude](https://reeferdude.com/accessibility/): ReeferDude accessibility statement: our commitment to an accessible site, the standards we follow, and how to report a barrier.
+- [Account / Sign-in | ReeferDude](https://reeferdude.com/account/): Sign in to your ReeferDude account to reach membership, rewards, saved plans, and community features.
+- [Advertise With Us | ReeferDude](https://reeferdude.com/advertise/): Advertise with ReeferDude: reach a hemp learning audience through site advertising, newsletter placement, and community channels.
+- [Advocacy | ReeferDude](https://reeferdude.com/advocacy/): ReeferDude advocacy: hemp policy news, the December 11 2026 federal cap, and how to stay informed and engaged.
+- [Affiliate Disclosure | ReeferDude](https://reeferdude.com/affiliate-disclosure/): ReeferDude affiliate disclosure: some links on this site earn a commission at no extra cost to you, and how that works.
+- [Affiliate Program | ReeferDude](https://reeferdude.com/affiliate-program/): Join the ReeferDude affiliate program: earn by referring buyers to the store with tracked links and honest promotion rules.
+- [Age Policy | ReeferDude](https://reeferdude.com/age-policy/): ReeferDude age policy: the site and store are for adults 18 and older, and how age requirements are enforced.
+- [AI Budtender | ReeferDude](https://reeferdude.com/ai-budtender/): Ask the ReeferDude AI budtender about hemp strains, growing, products, and the store, with voice input, file uploads, and chat history.
+- [AI & Voice Data Policy | ReeferDude](https://reeferdude.com/ai-voice-data-policy/): ReeferDude AI and voice data policy: how voice input, chat transcripts, and uploads are handled by the budtender.
+- [API / Developers | ReeferDude](https://reeferdude.com/api/): ReeferDude API for developers: planned interfaces for guides, strains, and store data, with documentation launching alongside the platform.
+- [App Download | ReeferDude](https://reeferdude.com/app/): Download the ReeferDude app: install the progressive web app on your phone or desktop for the budtender, guides, and community.
+- [Author Pages | ReeferDude](https://reeferdude.com/authors/): ReeferDude authors: Ray Meadows and Jessica Mullins write the guides, articles, and courses behind the flagship.
+- [Blog / Learn | ReeferDude](https://reeferdude.com/blog/): The ReeferDude blog and learning library: grow explainers, strain spotlights, hemp news, and platform updates.
+- [Calculators | ReeferDude](https://reeferdude.com/calculators/): ReeferDude calculators: dosage estimators, yield planners, and grow math helpers launching with the platform tools.
+- [Careers | ReeferDude](https://reeferdude.com/careers/): ReeferDude careers: a small team building a hemp flagship, with future roles posted here as they open.
+- [Cart | ReeferDude](https://reeferdude.com/cart/): Your ReeferDude cart: review items from the store engine before checkout, with live checkout arriving via a hemp-aware gateway.
+- [Changelog | ReeferDude](https://reeferdude.com/changelog/): ReeferDude changelog: a dated log of platform changes, new tools, and fixes, starting with the flagship launch.
+- [Checkout | ReeferDude](https://reeferdude.com/checkout/): ReeferDude checkout: the honest checkout flow for store orders, with live payment arriving via a hemp-aware gateway.
+- [Chillout VR | ReeferDude](https://reeferdude.com/chillout-vr/): Chillout VR: a virtual relaxation space in the ReeferDude world for unwinding, listening, and hanging out with the community.
+- [Community Guidelines | ReeferDude](https://reeferdude.com/community-guidelines/): ReeferDude community guidelines: the rules for respectful, legal, honest participation in the community and forum.
+- [Community | ReeferDude](https://reeferdude.com/community/): The ReeferDude community: growers, makers, and learners sharing grow journals, tips, questions, and support around hemp.
+- [Compliance | ReeferDude](https://reeferdude.com/compliance/): ReeferDude compliance: hemp rules, the December 11 2026 federal cap of 0.4 mg total THC per container, and how the site stays legal.
+- [Consultation | ReeferDude](https://reeferdude.com/consultation/): Book a ReeferDude consultation: one-on-one help with growing, strain selection, design, and getting started with hemp.
+- [Contact | ReeferDude](https://reeferdude.com/contact/): Contact ReeferDude: send a message through the contact form for help with the site, membership, orders, or partnerships.
+- [Contest Rules | ReeferDude](https://reeferdude.com/contest-rules/): ReeferDude contest rules: the official rules framework for giveaways and competitions when one runs.
+- [Cookie Policy | ReeferDude](https://reeferdude.com/cookie-policy/): ReeferDude cookie policy: which cookies the site uses, what they do, and how to control them.
+- [Courses | ReeferDude](https://reeferdude.com/courses/): ReeferDude courses: structured learning paths for growing, strains, design, and hemp business, included with membership tiers.
+- [Customer Stories | ReeferDude](https://reeferdude.com/customer-stories/): ReeferDude customer stories: real grow journeys and experiences shared by the community, with no invented testimonials.
+- [Deals | ReeferDude](https://reeferdude.com/deals/): ReeferDude deals: current offers and promotions from the store engine, updated as new deals go live.
+- [Delivery | ReeferDude](https://reeferdude.com/delivery/): ReeferDude delivery: how orders from the store engine reach you, what areas are covered, and how tracking works.
+- [Design Studio | ReeferDude](https://reeferdude.com/design-studio/): ReeferDude Design Studio: design custom hemp accessories, apparel, and 3D print-on-demand pieces with live previews.
+- [Digital Products | ReeferDude](https://reeferdude.com/digital-products/): ReeferDude digital products: downloadable guides, templates, planners, and courses for growers and makers.
+- [DMCA Policy | ReeferDude](https://reeferdude.com/dmca/): ReeferDude DMCA policy: how to report copyright infringement and how counter-notices work.
+- [Do Not Sell My Personal Information | ReeferDude](https://reeferdude.com/do-not-sell/): Opt out of the sale or sharing of your personal information on ReeferDude, and learn what rights you have over your data.
+- [Donate | ReeferDude](https://reeferdude.com/donate/): Support ReeferDude: ways to back the guides, community, and platform, including membership and sharing, with direct donations opening later.
+- [Dosing Guide | ReeferDude](https://reeferdude.com/dosing-guide/): Dosing guide for hemp products: general education on starting low, going slow, and the factors that change how a dose feels.
+- [Events | ReeferDude](https://reeferdude.com/events/): ReeferDude events: live sessions, workshops, community hangouts, and launches, announced through the community and newsletter.
+- [FAQ | ReeferDude](https://reeferdude.com/faq/): Frequently asked questions about ReeferDude: what the brand is, how shopping works, membership, accounts, and the rules of the site.
+- [Forum | ReeferDude](https://reeferdude.com/forum/): The ReeferDude forum: discussion boards for growing, strains, making, and business, moderated under the community guidelines.
+- [Founders / Team | ReeferDude](https://reeferdude.com/founders/): Meet the ReeferDude founders: Ray Meadows and Jessica Mullins, the team behind the flagship hemp brand.
+- [Franchise / Licensing | ReeferDude](https://reeferdude.com/franchise/): ReeferDude franchise and licensing: how partners can license the brand, tools, and content for their own markets.
+- [Gift Cards | ReeferDude](https://reeferdude.com/gift-cards/): ReeferDude gift cards: give store credit for hemp products, accessories, and custom pieces, launching with live checkout.
+- [Glossary | ReeferDude](https://reeferdude.com/glossary/): The ReeferDude glossary: plain definitions for hemp, cannabinoid, terpene, growing, and product terms used across the site.
+- [Grow Calendar | ReeferDude](https://reeferdude.com/grow-calendar/): ReeferDude grow calendar: a month-by-month guide to hemp growing tasks, indoors year-round and outdoors by season.
+- [Grow Guides | ReeferDude](https://reeferdude.com/grow-guides/): Grow guides for hemp cultivation: setup, light, water, nutrients, training, harvest, and curing, written for beginners and experienced growers.
+- [Grow Room Designer (AR/VR) | ReeferDude](https://reeferdude.com/grow-room-designer/): Grow Room Designer: plan a hemp grow space in augmented and virtual reality, with layout, lighting, and airflow previews.
+- [Health Disclaimer | ReeferDude](https://reeferdude.com/health-disclaimer/): ReeferDude health disclaimer: hemp product information is educational only and not medical advice, with the FDA-style disclosure.
+- [Help Center | ReeferDude](https://reeferdude.com/help/): ReeferDude help center: answers for accounts, orders, membership, tools, and community, with contact routes for the rest.
+- [How It Works | ReeferDude](https://reeferdude.com/how-it-works/): How ReeferDude works: the seed-to-smoke flow from learning and planning to ordering, growing, and community.
+- [HustleZone | ReeferDude](https://reeferdude.com/hustlezone/): HustleZone: the ReeferDude space for builders, sellers, and creators turning hemp knowledge into a business.
+- [Investors | ReeferDude](https://reeferdude.com/investors/): ReeferDude investors: an overview of the brand, the business model, and how prospective investors can reach the team.
+- [Lab Results (COAs) | ReeferDude](https://reeferdude.com/lab-results/): ReeferDude lab results: certificates of analysis showing what is in tested hemp products, how to read them, and batch lookup.
+- [Marketplace | ReeferDude](https://reeferdude.com/marketplace/): ReeferDude Marketplace: hemp products, maker goods, and print-on-demand pieces from the store engine, with seller rules that keep it honest.
+- [Membership | ReeferDude](https://reeferdude.com/membership/): ReeferDude membership tiers: Seed Starter at 19 dollars per month, Master Grower at 49 dollars per month, and Ganjapreneur at 99 dollars per month.
+- [Newsletter | ReeferDude](https://reeferdude.com/newsletter/): The ReeferDude newsletter: new guides, strain spotlights, community news, and platform updates, straight to your inbox.
+- [Onboarding | ReeferDude](https://reeferdude.com/onboarding/): ReeferDude onboarding: a step-by-step start for new members, from your first question to your first grow plan.
+- [Order Tracking | ReeferDude](https://reeferdude.com/order-tracking/): Track your ReeferDude order from the store engine: enter your order details to follow shipping and delivery.
+- [Partners | ReeferDude](https://reeferdude.com/partners/): ReeferDude partners: the kinds of partners the brand works with, from suppliers and makers to creators and retailers.
+- [Podcast | ReeferDude](https://reeferdude.com/podcast/): The ReeferDude podcast: conversations about hemp growing, strains, makers, and the business, announced as episodes launch.
+- [Press / Media | ReeferDude](https://reeferdude.com/press/): ReeferDude press and media: brand background, real reach figures, and how journalists can reach the team.
+- [Privacy Policy | ReeferDude](https://reeferdude.com/privacy/): ReeferDude privacy policy: what data the site collects, how it is used, and the choices you have over your information.
+- [Recipes | ReeferDude](https://reeferdude.com/recipes/): ReeferDude recipes: hemp-infused basics and edibles methods, with dosing caution and legal notes for home cooks.
+- [Refund Policy | ReeferDude](https://reeferdude.com/refund-policy/): ReeferDude refund policy: when refunds apply, how they are processed, and how to request one.
+- [Resources | ReeferDude](https://reeferdude.com/resources/): ReeferDude resources: free checklists, planners, templates, and reference downloads for growers and makers.
+- [Reviews / Proof | ReeferDude](https://reeferdude.com/reviews/): Real proof behind ReeferDude: Google Local Guides views and Facebook Marketplace reach, reported honestly with no invented reviews.
+- [Rewards (Budz) | ReeferDude](https://reeferdude.com/rewards/): Budz rewards: earn points as you learn, complete quests, and climb the ranks from Seed to Ganjapreneur on ReeferDude.
+- [Search | ReeferDude](https://reeferdude.com/search/): Search ReeferDude: find guides, strains, tools, and help pages across the flagship site.
+- [Seller Terms | ReeferDude](https://reeferdude.com/seller-terms/): ReeferDude seller terms: the rules for selling on the marketplace, including listing honesty, fulfillment, and enforcement.
+- [Services | ReeferDude](https://reeferdude.com/services/): ReeferDude services: consultation, design, marketplace selling, delivery, and learning services in one overview.
+- [Shipping & Returns | ReeferDude](https://reeferdude.com/shipping-returns/): ReeferDude shipping and returns policy: how store orders ship, what delivery costs, and how returns work.
+- [Shop | ReeferDude](https://reeferdude.com/shop/): Shop ReeferDude: hemp-derived products, accessories, apparel, and custom pieces, sold through the PotGrowHub store engine.
+- [Sitemap | ReeferDude](https://reeferdude.com/sitemap/): ReeferDude visitor sitemap: a grouped list of the main pages for hemp learning, shopping, community, and support.
+- [Size Guide | ReeferDude](https://reeferdude.com/size-guide/): ReeferDude size guide: how to measure for apparel and custom pieces, and where brand-specific charts appear.
+- [Status | ReeferDude](https://reeferdude.com/status/): ReeferDude status: the health of the flagship site, store engine, budtender, and community systems.
+- [Strain Builder | ReeferDude](https://reeferdude.com/strain-builder/): Strain Builder: plan a hemp grow by comparing strain families, traits, and setups, then save the plan to your account.
+- [Strain Guides | ReeferDude](https://reeferdude.com/strain-guides/): Strain guides covering hemp strain families, terpenes, effects, and how to choose a strain for your goals and grow setup.
+- [Strain Index | ReeferDude](https://reeferdude.com/strain-index/): The ReeferDude strain index: an A to Z list of hemp strain families and traits covered by the strain guides.
+- [Subscription Terms | ReeferDude](https://reeferdude.com/subscription-terms/): ReeferDude subscription terms: billing, renewal, cancellation, and tier changes for membership.
+- [Sustainability | ReeferDude](https://reeferdude.com/sustainability/): ReeferDude sustainability: eco-minded sourcing, packaging, and production choices across the flagship and the store.
+- [Terms of Service | ReeferDude](https://reeferdude.com/terms/): ReeferDude terms of service: the rules for using the site, its content, accounts, and community features.
+- [Videos | ReeferDude](https://reeferdude.com/videos/): ReeferDude videos: grow walkthroughs, studio demos, community sessions, and explainers, published as they are produced.
+- [Waitlist | ReeferDude](https://reeferdude.com/waitlist/): Join the ReeferDude waitlist for early access to new tools, features, and launches as they roll out.
+- [Warranty | ReeferDude](https://reeferdude.com/warranty/): ReeferDude warranty: coverage for defective products and hardware, how claims work, and what is excluded.
+- [Wholesale | ReeferDude](https://reeferdude.com/wholesale/): ReeferDude wholesale: bulk and business purchasing for retailers, makers, and partners, handled through the store engine.
