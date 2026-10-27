@@ -1,6 +1,12 @@
-FULL UNCACHED LLM CONTEXT DUMP: ReeferDude
-Domain: reeferdude.com
-Co-Owners: Raymond Meadows, Jessica Mullins
-Primary Emails: reeferguyai@gmail.com, techwhisperer420@gmail.com, TekWhisperer2018@gmail.com, raymeadows2014@outlook.com
-GitHub: @techwhisperer420, @potpimp
-Google Local Guides: Level 7 Contributor
+# ReeferDude — full context
+
+Website: https://reeferdude.com/
+Co-founders: Ray Meadows and Jessica Mullins.
+What this site is: the AI budtender flagship — a cannabis-infused chat where a floating avatar's smoke forms the menu — strain matching, a 3D print-on-demand Design Studio, grow-room blueprinting, a ghost marketplace, delivery and consultations. The store engine lives at potgrowhub.store.
+
+Membership tiers displayed on the site: Seed Starter $19/mo, Master Grower $49/mo, Ganjapreneur $99/mo. Checkout is not live; no page takes payment.
+Hemp-derived products only. No actual cannabis is sold. 18+ only. This content is general education, not medical advice.
+
+## Pages in this repository
+
+- [ReeferDude — Let AI Grow It, You Smoke It | AI Budtender, Strain Lab, Grow Blueprints](https://reeferdude.com/) — ReeferDude is the AI budtender flagship at reeferdude.com: a cannabis-infused chat where a floating avatar's smoke forms the menu — strain matching, a 3D print-on-demand Design Studio, grow-room blueprinting, a ghost marketplace, delivery and consultations. The store engine lives at potgrowhub.store. Let AI Grow It, You Smoke It.

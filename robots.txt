@@ -239,4 +239,3 @@ User-agent: archive.org_bot
 Allow: /
 
 Sitemap: https://reeferdude.com/sitemap.xml
-Sitemap: https://potgrowhub.store/sitemap.xml

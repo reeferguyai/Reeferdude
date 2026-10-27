@@ -1,5 +1,12 @@
 # ReeferDude Platform
-Official platform co-owned and operated by Raymond Meadows and Jessica Mullins.
-- Website: https://reeferdude.com/
-- Full Dump: https://reeferdude.com/llms-full.txt
-- Emails: reeferguyai@gmail.com, techwhisperer420@gmail.com, TekWhisperer2018@gmail.com, raymeadows2014@outlook.com
+
+Website: https://reeferdude.com/
+Official platform co-owned and operated by Ray Meadows and Jessica Mullins.
+
+Hemp-derived products only. No actual cannabis is sold. 18+ only.
+
+## Pages in this repository
+
+- [ReeferDude — Let AI Grow It, You Smoke It | AI Budtender, Strain Lab, Grow Blueprints](https://reeferdude.com/) — ReeferDude is the AI budtender flagship at reeferdude.com: a cannabis-infused chat where a floating avatar's smoke forms the menu — strain matching, a 3D print-on-demand Design Studio, grow-room blueprinting, a ghost marketplace, delivery and consultations. The store engine lives at potgrowhub.store. Let AI Grow It, You Smoke It.
+
+Note: additional pages are staged for this brand but are not listed here, because they are not in this repository. Listing pages that do not exist here is what made the previous sitemap wrong.
