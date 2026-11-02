@@ -1,0 +1,42 @@
+{"rawName":"REC: Sunshine Extracts Dulce Laps FSE Live Rosin","brand":"Sunshine Extracts","category":"Concentrate","subcategory":"rosin","cleanName":"Dulce Laps - Live Rosin"}
+{"rawName":"Eureka Live Resin Reload 1g; Super Skunk","brand":"EUREKA","category":"Vaporizers","subcategory":"cartridges","cleanName":"Super Skunk - Live Resin"}
+{"rawName":"Eureka Live Resin Reload 1g; Poundcake","brand":"EUREKA","category":"Vaporizers","subcategory":"cartridges","cleanName":"Poundcake - Live Resin"}
+{"rawName":"REC: XVapes Blackberry Gelato 510 Cartridge Distillate","brand":"XVapes","category":"Vaporizers","subcategory":"cartridges","cleanName":"Blackberry Gelato - Distillate Cart"}
+{"rawName":"Eureka Live Resin Reload 1g; Apple Fritter","brand":"EUREKA","category":"Vaporizers","subcategory":"cartridges","cleanName":"Apple Fritter - Live Resin"}
+{"rawName":"Eureka AIO Live Resin Starter Kit 1g; Poundcake","brand":"EUREKA","category":"Vaporizers","subcategory":"all-in-one","cleanName":"Poundcake - Live Resin AIO"}
+{"rawName":"Eureka AIO Live Resin Starter Kit 1g Sativa; Apple Fritter","brand":"EUREKA","category":"Vaporizers","subcategory":"all-in-one","cleanName":"Apple Fritter - Live Resin AIO"}
+{"rawName":"Eureka AIO Live Resin Starter Kit 1g Indica; Super Skunk","brand":"EUREKA","category":"Vaporizers","subcategory":"all-in-one","cleanName":"Super Skunk - Live Resin AIO"}
+{"rawName":"Edun Live Rosin Cart 1g; Peanut Butter Breath","brand":"Edun","category":"Vaporizers","subcategory":"cartridges","cleanName":"Peanut Butter Breath - Live Rosin Cart"}
+{"rawName":"Batch Disposable 2g Hybrid; Juicy Melons","brand":"BATCH","category":"Vaporizers","subcategory":"all-in-one","cleanName":"Juicy Melons - Disposable"}
+{"rawName":"REC - Seed & Smith - Furious Fruit / Live Resin Cartridge","brand":"Seed & Smith","category":"Vaporizers","subcategory":"live-resin","cleanName":"Furious Fruit - Live Resin Cart"}
+{"rawName":"REC - Jetty - Jungle Gold Mini Tank / Rosin AIO","brand":"Jetty Extracts","category":"Vaporizers","subcategory":"disposables","cleanName":"Jungle Gold - Rosin AIO"}
+{"rawName":"REC - Jetty - Grape² (I) Mini Tank / Rosin AIO","brand":"Jetty Extracts","category":"Vaporizers","subcategory":"disposables","cleanName":"Grape² - Rosin AIO"}
+{"rawName":"REC - Soiku Bano - Sour Diesel / Live Rosin","brand":"Soiku Bano","category":"Concentrate","subcategory":"rosin","cleanName":"Sour Diesel - Live Rosin"}
+{"rawName":"REC - Blaze Boyz - Gastropop / Premium Bud","brand":"Blaze Boyz","category":"Flower","subcategory":"bulk-flower","cleanName":"Gastropop - Premium Bud"}
+{"rawName":"REC - Erva x In-House - Black Cherry Guava / 90µ Cold Cure Live Rosin","brand":"Erva x In-House","category":"Concentrate","subcategory":"rosin","cleanName":"Black Cherry Guava - Cold Cure Live Rosin"}
+{"rawName":"REC - Erva x In-House - Cherry Plantains / 90µ Cold Cure Live Rosin","brand":"Erva x In-House","category":"Concentrate","subcategory":"rosin","cleanName":"Cherry Plantains - Cold Cure Live Rosin"}
+{"rawName":"REC - Leiffa - Maple Cereal / Cold Cure Rosin","brand":"Leiffa","category":"Concentrate","subcategory":"rosin","cleanName":"Maple Cereal - Cold Cure Rosin"}
+{"rawName":"REC - Leiffa - Red Spritz / Cold Cure Rosin","brand":"Leiffa","category":"Concentrate","subcategory":"rosin","cleanName":"Red Spritz - Cold Cure Rosin"}
+{"rawName":"REC - Panacea - Goddess Breath / Live Resin Blend Cart","brand":"CRAFT","category":"Vaporizers","subcategory":"live-resin","cleanName":"Goddess Breath - Live Resin Blend Cart"}
+{"rawName":"REC - Seed & Smith - Apricot Uprising / Live Resin Cart","brand":"Seed & Smith","category":"Concentrate","subcategory":"live-resin","cleanName":"Apricot Uprising - Live Resin Cart"}
+{"rawName":"REC - Malek's Melts - Hypnotize / Live Resin","brand":"Malek's","category":"Concentrate","subcategory":"live-resin","cleanName":"Hypnotize - Live Resin"}
+{"rawName":"REC - Soiku Bano - Crashglow / Live Rosin","brand":"Soiku Bano","category":"Concentrate","subcategory":"rosin","cleanName":"Crashglow - Live Rosin"}
+{"rawName":"REC - Legacy Grown x West Edison - Dulce De Uva / Shatter","brand":"West Edison","category":"Concentrate","subcategory":"wax","cleanName":"Dulce De Uva - Shatter"}
+{"rawName":"REC - Legacy Grown x Denver Dab Co - Animal Tsunami / Sugar Wax","brand":"Denver Dab Co.","category":"Concentrate","subcategory":"wax","cleanName":"Animal Tsunami - Sugar Wax"}
+{"rawName":"REC - In-House - Grape Koolada / Full Spectrum Live Rosin","brand":"InHouse","category":"Concentrate","subcategory":"rosin","cleanName":"Grape Koolada - Full Spectrum Live Rosin"}
+{"rawName":"REC - Seed & Smith - Solar Sangria / Live Resin Cart","brand":"Seed & Smith","category":"Concentrate","subcategory":"live-resin","cleanName":"Solar Sangria - Live Resin Cart"}
+{"rawName":"REC - In-House - Honey Limez / Full Spectrum Live Rosin","brand":"InHouse","category":"Concentrate","subcategory":"rosin","cleanName":"Honey Limez - Full Spectrum Live Rosin"}
+{"rawName":"Garlic Ice Cream | 2G | Live Resin Disposable Vape","brand":"Fat Grams","category":"Vaporizers","subcategory":"disposables","cleanName":"Garlic Ice Cream - Live Resin Disposable"}
+{"rawName":"Durban","brand":"In The Flow","category":"Flower","subcategory":"bulk-flower","cleanName":"Durban"}
+{"rawName":"Pave'","brand":"Colorado Harvest Company","category":"Flower","subcategory":"bulk-flower","cleanName":"Pave'"}
+{"rawName":"Cake Mix | Shake","brand":"Colorado Harvest Company","category":"Flower","subcategory":"bulk-flower","cleanName":"Cake Mix - Shake"}
+{"rawName":"Head Hunter","brand":"Maleks Premium Cannabis","category":"Flower","subcategory":"bulk-flower","cleanName":"Head Hunter"}
+{"rawName":"Black Ice","brand":"In The Flow","category":"Flower","subcategory":"bulk-flower","cleanName":"Black Ice"}
+{"rawName":"The Sweeties #7","brand":"710 Labs Bulk Flower","category":"Flower","subcategory":"bulk-flower","cleanName":"The Sweeties #7"}
+{"rawName":"Baby Yoda","brand":"Colorado Harvest Company","category":"Flower","subcategory":"bulk-flower","cleanName":"Baby Yoda"}
+{"rawName":"Pina Grande","brand":"Malek's","category":"Flower","subcategory":"bulk-flower","cleanName":"Pina Grande"}
+{"rawName":"Runtz","brand":"Viola","category":"Flower","subcategory":"bulk-flower","cleanName":"Runtz"}
+{"rawName":"REC - Oni - Point Break / Cold Cured Hash Rosin","brand":"ONI","category":"Concentrate","subcategory":"rosin","cleanName":"Point Break - Cold Cured Hash Rosin"}
+{"rawName":"REC - Magic City - Fried Strawberry","brand":"Magic City","category":"Flower","subcategory":null,"cleanName":"Fried Strawberry"}
+{"rawName":"REC - Oni - Yuma Haze / Cold Cured Hash Rosin","brand":"ONI","category":"Concentrate","subcategory":"rosin","cleanName":"Yuma Haze - Cold Cured Hash Rosin"}
+{"rawName":"REC - Malek's Melts - Panda Puffs / Live Rosin","brand":"Malek's","category":"Concentrate","subcategory":"rosin","cleanName":"Panda Puffs - Live Rosin"}
