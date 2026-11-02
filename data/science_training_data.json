@@ -1,0 +1,84 @@
+{
+  "source_repository": "https://github.com/KellanFinney/Canna_LoRA",
+  "source_file": "science_training_data.json",
+  "source_url": "https://github.com/KellanFinney/Canna_LoRA/blob/main/science_training_data.json",
+  "dataset_name": "science_training_data",
+  "description": "Seed scientific Q&A dataset derived from cannabis research papers and public-source literature summaries.",
+  "added_to_repo": "reeferguyai/Reeferdude",
+  "data": {
+    "A real-time PCR assay for the relative quantification of the tetrahydrocannabinolic": {
+      "chunk_0": {
+        "generated": [
+          {
+            "question": "What is the purpose of contents lists available at SciVerse ScienceDirect?",
+            "answer": "The purpose of contents lists available at SciVerse ScienceDirect is to provide access to various scientific and academic publications."
+          },
+          {
+            "question": "Where can I find contents lists for scientific and academic publications, and what are the benefits of using such a resource?",
+            "answer": "You can find contents lists at SciVerse ScienceDirect, which offers a comprehensive collection of scientific and academic publications, allowing users to easily discover and access relevant research and articles."
+          },
+          {
+            "question": "What type of information can be found in the contents lists available at SciVerse ScienceDirect?",
+            "answer": "The contents lists at SciVerse ScienceDirect contain information about various scientific and academic publications, including articles, journals, and research papers."
+          },
+          {
+            "question": "How can accessing contents lists at SciVerse ScienceDirect aid in research and academic pursuits, considering the vast amount of information available?",
+            "answer": "Accessing contents lists at SciVerse ScienceDirect can aid in research and academic pursuits by providing a centralized location to discover and access relevant publications, saving time and effort in searching for specific information."
+          }
+        ],
+        "context": "Contents lists available at SciVerse ScienceDirect",
+        "source_pdf": "A real-time PCR assay for the relative quantification of the tetrahydrocannabinolic.pdf"
+      },
+      "chunk_1": {
+        "generated": [
+          {
+            "question": "What is the website for the Forensic Science International journal?",
+            "answer": "The website for the Forensic Science International journal is www.elsevier.com/locate/forsciint."
+          },
+          {
+            "question": "Where can I find the homepage for the Forensic Science International journal, and what type of information can I expect to find there?",
+            "answer": "You can find the homepage for the Forensic Science International journal at www.elsevier.com/locate/forsciint, where you can expect to find information about the journal, its scope, and published articles."
+          }
+        ],
+        "context": "Forensic Science International\nj o u r n a l homepage: www.elsevier.com/locate/forsciint",
+        "source_pdf": "A real-time PCR assay for the relative quantification of the tetrahydrocannabinolic.pdf"
+      },
+      "chunk_2": {
+        "generated": [
+          {
+            "question": "What is the purpose of the real-time PCR assay in the context of herbal Cannabis samples?",
+            "answer": "The real-time PCR assay is used for the relative quantification of the tetrahydrocannabinolic acid (THCA) synthase gene in herbal Cannabis samples."
+          },
+          {
+            "question": "Who are the researchers involved in the study, and what are their affiliations?",
+            "answer": "The researchers involved are Fidelia Cascini from the Institute of Legal Medicine, University 'Cattolica Sacro Cuore', and Stella Passerotti from Laboratory 'BioAnalisi Trentina S.r.l.'."
+          },
+          {
+            "question": "What is the significance of the THCA synthase gene in herbal Cannabis samples, and how does the real-time PCR assay contribute to its quantification?",
+            "answer": "The THCA synthase gene is significant in herbal Cannabis samples as it is involved in the production of tetrahydrocannabinolic acid (THCA). The real-time PCR assay contributes to its quantification by providing a method for the relative quantification of the gene."
+          }
+        ],
+        "context": "A real-time PCR assay for the relative quantification of the tetrahydrocannabinolic acid (THCA) synthase gene in herbal Cannabis samples",
+        "source_pdf": "A real-time PCR assay for the relative quantification of the tetrahydrocannabinolic.pdf"
+      },
+      "chunk_3": {
+        "generated": [
+          {
+            "question": "What is the primary goal of the study regarding the tetrahydrocannabinolic acid synthase gene and its impact on THC production in Cannabis?",
+            "answer": "The study aims to investigate whether the THCA synthase gene influences the production and storage of THC in a dose-dependent manner."
+          },
+          {
+            "question": "How does the THCA synthase gene relate to the production of the main psychoactive component in the Cannabis plant, and what is its potential application in forensics?",
+            "answer": "The THCA synthase gene codes for the enzyme involved in the biosynthesis of THCA, which is decarboxylated to produce THC. Gene quantification could be useful in forensics to identify and classify seized Cannabis samples."
+          },
+          {
+            "question": "What is the process by which THCA is converted into the main psychoactive component of the Cannabis plant?",
+            "answer": "THCA is decarboxylated to produce THC, the main psychoactive component in the Cannabis plant."
+          }
+        ],
+        "context": "Abstract: The study investigated whether the THCA synthase gene influences THC production and storage in Cannabis.",
+        "source_pdf": "A real-time PCR assay for the relative quantification of the tetrahydrocannabinolic.pdf"
+      }
+    }
+  }
+}
