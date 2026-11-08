@@ -662,6 +662,7 @@ function initChat() {
       const part = await reader.read();
       if (part.done) break;
       buffer += decoder.decode(part.value, { stream: true });
+      buffer = buffer.replace(/\r\n/g, "\n");
       let boundary;
       while ((boundary = buffer.indexOf("\n\n")) !== -1) {
         const block = buffer.slice(0, boundary);
