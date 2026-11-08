@@ -172,6 +172,7 @@ async function streamOpenAI(messages, res, requestId) {
     const result = await reader.read();
     if (result.done) break;
     buffer += decoder.decode(result.value, { stream: true });
+    buffer = buffer.replace(/\r\n/g, "\n");
     let boundary;
     while ((boundary = buffer.indexOf("\n\n")) !== -1) {
       const block = buffer.slice(0, boundary);
