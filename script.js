@@ -590,22 +590,89 @@ function initChat() {
       chipsBox.appendChild(b);
     });
   }
-  function handleUserText(text) {
+  async function requestCloudReply(clean, typing) {
+    const history = msgs.slice(-14).map(function (m) {
+      return {
+        role: m.role === "bot" ? "assistant" : "user",
+        content: m.role === "bot" ? stripForSpeech(m.text) : m.text
+      };
+    });
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: history })
+    });
+    if (!response.ok) {
+      let payload = {};
+      try { payload = await response.json(); } catch (e) {}
+      throw new Error(payload.code || "AI_API_UNAVAILABLE");
+    }
+    if (!response.body || !response.body.getReader) {
+      const payload = await response.json();
+      const text = payload.output_text || payload.text || "";
+      if (!text) throw new Error("EMPTY_AI_RESPONSE");
+      return text;
+    }
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+    let fullText = "";
+
+    function consumeBlock(block) {
+      const line = block.split(/\r?\n/).find(function (item) { return item.indexOf("data:") === 0; });
+      if (!line) return;
+      const raw = line.slice(5).trim();
+      if (!raw || raw === "[DONE]") return;
+      let packet;
+      try { packet = JSON.parse(raw); } catch (e) { return; }
+      if (packet.error) throw new Error(packet.code || "AI_STREAM_ERROR");
+      if (typeof packet.delta === "string") {
+        fullText += packet.delta;
+        typing.innerHTML = escapeHtml(fullText).replace(/\n/g, "<br>");
+        log.scrollTop = log.scrollHeight;
+      }
+    }
+
+    while (true) {
+      const part = await reader.read();
+      if (part.done) break;
+      buffer += decoder.decode(part.value, { stream: true });
+      let boundary;
+      while ((boundary = buffer.indexOf("\n\n")) !== -1) {
+        const block = buffer.slice(0, boundary);
+        buffer = buffer.slice(boundary + 2);
+        consumeBlock(block);
+      }
+    }
+    buffer += decoder.decode();
+    if (buffer.trim()) consumeBlock(buffer);
+    if (!fullText.trim()) throw new Error("EMPTY_AI_RESPONSE");
+    return fullText.trim();
+  }
+
+  async function handleUserText(text) {
     const clean = (text || "").trim();
     if (!clean) return;
     msgs.push({ role: "user", text: clean });
     bubble("user", clean);
     budSave(msgs);
-    const typing = bubble("bot", "🌿 <i>thinking…</i>");
-    setTimeout(function () {
-      const reply = budtenderReply(clean);
-      msgs.push({ role: "bot", text: reply.text });
-      typing.innerHTML = reply.text;
-      log.scrollTop = log.scrollHeight;
-      budSave(msgs);
-      renderChips(reply.chips || DEFAULT_CHIPS);
-      speak(reply.text);
-    }, 420);
+    const typing = bubble("bot", "🌿 <i>GanjaGuru is thinking…</i>");
+    let reply;
+    try {
+      const cloudText = await requestCloudReply(clean, typing);
+      reply = { text: escapeHtml(cloudText).replace(/\n/g, "<br>"), chips: null };
+    } catch (error) {
+      // The local expert system remains available when the API is offline,
+      // the key is missing, or the provider is temporarily unavailable.
+      reply = budtenderReply(clean);
+    }
+    msgs.push({ role: "bot", text: reply.text });
+    typing.innerHTML = reply.text;
+    log.scrollTop = log.scrollHeight;
+    budSave(msgs);
+    renderChips(reply.chips || DEFAULT_CHIPS);
+    speak(reply.text);
   }
 
   // restore history or greet
