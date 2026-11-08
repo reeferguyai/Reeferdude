@@ -23,6 +23,7 @@ function loadEnvFile() {
 loadEnvFile();
 
 const PORT = Number(process.env.API_PORT || 3001);
+const HOST = process.env.API_HOST || "127.0.0.1";
 const MODEL = process.env.OPENAI_MODEL || "gpt-6-luna";
 const API_KEY = process.env.OPENAI_API_KEY || "";
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || "http://localhost:5173,http://127.0.0.1:5173")
@@ -66,8 +67,7 @@ function applyCors(req, res) {
 }
 
 function isRateLimited(req) {
-  const forwarded = req.headers["x-forwarded-for"];
-  const ip = (typeof forwarded === "string" ? forwarded.split(",")[0].trim() : "") || req.socket.remoteAddress || "unknown";
+  const ip = req.socket.remoteAddress || "unknown";
   const now = Date.now();
   const record = requestCounts.get(ip) || { start: now, count: 0 };
   if (now - record.start >= WINDOW_MS) {
@@ -258,8 +258,8 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, "127.0.0.1", () => {
-  console.log("[ReeferDude API] http://127.0.0.1:" + PORT);
+server.listen(PORT, HOST, () => {
+  console.log("[ReeferDude API] http://" + HOST + ":" + PORT);
   console.log("[ReeferDude API] AI mode: " + (API_KEY ? MODEL : "local fallback only"));
 });
 
