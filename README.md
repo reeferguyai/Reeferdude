@@ -66,7 +66,39 @@ npm install
 npm run dev
 ```
 
-Vite prints the local development URL in the terminal when the server starts. Open that URL in a browser. Use `Ctrl+C` to stop the server.
+Vite prints the local development URL in the terminal when the server starts. Open that URL in a browser. The existing local knowledge assistant works without an API key.
+
+### Optional cloud AI for GanjaGuru
+
+Cloud AI is optional and API usage may incur charges. Without a key, the chat remains in local knowledge mode.
+
+In PowerShell, create your local environment file:
+
+```powershell
+Copy-Item .env.example .env
+notepad .env
+```
+
+Set your private key and model in `.env`:
+
+```dotenv
+OPENAI_API_KEY=your_private_api_key
+OPENAI_MODEL=gpt-6-luna
+API_PORT=3001
+ALLOWED_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
+```
+
+Do not paste the key into frontend code, commit it, or share it in screenshots.
+
+Open a **second PowerShell terminal** in the project folder and start the API:
+
+```powershell
+npm run api
+```
+
+Keep that terminal open. In the first terminal, run `npm run dev`. The Vite development server proxies `/api` requests to the local API server.
+
+Check the API in a browser at [http://127.0.0.1:3001/api/health](http://127.0.0.1:3001/api/health). The response reports whether a cloud key is configured; it never returns the key. The chat streams cloud responses when configured and falls back to the existing local knowledge assistant when the API or provider is unavailable.
 
 ### Useful commands
 
@@ -87,7 +119,7 @@ npm run verify
 
 ### Configuration and secrets
 
-The repository's frontend setup is defined in `package.json` and the Vite configuration. If a feature you are working on needs an external service or credentials, follow that service's setup instructions and use local environment configuration where supported. **Never commit credentials, private keys, or production secrets.** No environment-variable template is documented here, so check the relevant feature's existing code and documentation before adding configuration.
+The optional server-side GanjaGuru API reads `.env` using `.env.example` as its template. The browser never receives the provider key. Keep `.env` local; the repository ignores it. Cloud AI calls are not free, so leave `OPENAI_API_KEY` empty to use the local knowledge assistant without provider charges. **Never commit credentials, private keys, or production secrets.**
 
 ## Repository guide
 

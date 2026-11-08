@@ -379,7 +379,7 @@ const INTENTS = [
   { id: "bye", keys: { bye: 3, goodbye: 3, later: 2, peace: 2, "see you": 3 },
     answer: function () { return "Stay lifted and stay legal, friend. ✌️ The garden gate is always open — come back when the leaves talk to you."; } },
   { id: "who", keys: { "who are you": 4, "your name": 3, goddess: 2, budtender: 1 },
-    answer: function () { return "I'm the <b>GanjaGoddess</b> — the voice of ReeferDude.com and PotGrowHub.store. Part streetwise hustler, part yogi healer, part science nerd, all budtender. 🧞 I answer from a knowledge base baked right into this page — no cloud, no sign-up, just game. Ask me about strains, grows, gear, or prices."; } },
+    answer: function () { return "I'm the <b>GanjaGoddess</b> — the voice of ReeferDude.com and PotGrowHub.store. Part streetwise hustler, part yogi healer, part science nerd, all budtender. 🧞 I can use the knowledge base built into this page when offline, and cloud AI when the server is configured. I can help with education, planning, design, gear and project ideas."; } },
   { id: "help", keys: { help: 3, "what can you do": 4, topics: 3, menu: 2, options: 2, "how does this work": 3 },
     answer: function () { return "Here's my menu, friend:<br>• <b>Strain picks</b> — “best strain for sleep / pain / creativity / focus”<br>• <b>Strain facts</b> — name any strain in the vault<br>• <b>Grow game</b> — germination, veg, flower, harvest, drying & curing<br>• <b>Plant doctor</b> — yellow leaves, spots, wilting, mold, pests<br>• <b>Dial-it-in</b> — VPD, pH, nutrients, lighting, watering<br>• <b>Shop talk</b> — gear, prices, digital guides, booking a consult<br>Pick a lane and let's roll. 🌿"; } },
   { id: "sleep", keys: { sleep: 3, insomnia: 4, "fall asleep": 4, sleepy: 3, bedtime: 3, nighttime: 2, "knock me out": 3, "couch lock": 3, couchlock: 3 },
@@ -518,7 +518,7 @@ function budtenderReply(rawText) {
    ================================================================ */
 const DEFAULT_CHIPS = ["Best strain for sleep", "Yellow leaves?", "VPD help", "What should a beginner buy?", "Tell me about Blue Dream", "How do I germinate seeds?"];
 const CHIP_ROUTES = { "Open the Grow Studio": "studio", "Show me gear": "shop" };
-const BUD_GREETING = "🌿✌️ Peace, I'm the <b>GanjaGoddess</b> — budtender of this garden. Straight talk before we spark: I'm an expert system answering from a knowledge base built into this page, not a cloud AI — so my game is deep on strains, growing, and gear, and I'll tell you plain when a question lives outside the vault. Ask me anything green.";
+const BUD_GREETING = "🌿✌️ Peace, I am the <b>GanjaGoddess</b> — the guide for ReeferDude and PotGrowHub. I can use the built-in knowledge vault offline and connect to cloud AI when the server is configured. Ask me about education, planning, design, gear or your next project.";
 let ttsOn = false;
 
 function budLoad() {
@@ -562,6 +562,30 @@ function initChat() {
   const clearBtn = document.getElementById("chat-clear");
   const voiceNote = document.getElementById("chat-voice-note");
   let msgs = budLoad();
+  const modeStatus = document.createElement("p");
+  modeStatus.id = "chat-ai-status";
+  modeStatus.className = "text-xs text-stone-400 px-2 py-1";
+  modeStatus.setAttribute("role", "status");
+  modeStatus.setAttribute("aria-live", "polite");
+  modeStatus.textContent = "Checking GanjaGuru connection…";
+  log.parentNode.insertBefore(modeStatus, log);
+
+  function setModeStatus(message) {
+    modeStatus.textContent = message;
+  }
+
+  async function refreshAiStatus() {
+    try {
+      const response = await fetch("/api/health", { cache: "no-store" });
+      if (!response.ok) throw new Error("API_OFFLINE");
+      const status = await response.json();
+      setModeStatus(status.aiConfigured
+        ? "Cloud AI configured · connection will be verified when you send a message"
+        : "Local knowledge mode · cloud API key not configured");
+    } catch (error) {
+      setModeStatus("Local knowledge mode · API server offline or unavailable");
+    }
+  }
 
   function bubble(role, html) {
     const wrap = document.createElement("div");
@@ -590,22 +614,104 @@ function initChat() {
       chipsBox.appendChild(b);
     });
   }
-  function handleUserText(text) {
+  async function requestCloudReply(clean, typing) {
+    const history = msgs.slice(-14).map(function (m) {
+      return {
+        role: m.role === "bot" ? "assistant" : "user",
+        content: m.role === "bot" ? stripForSpeech(m.text) : m.text
+      };
+    });
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: history })
+    });
+    if (!response.ok) {
+      let payload = {};
+      try { payload = await response.json(); } catch (e) {}
+      throw new Error(payload.code || "AI_API_UNAVAILABLE");
+    }
+    if (!response.body || !response.body.getReader) {
+      const payload = await response.json();
+      const text = payload.output_text || payload.text || "";
+      if (!text) throw new Error("EMPTY_AI_RESPONSE");
+      return text;
+    }
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+    let fullText = "";
+
+    function consumeBlock(block) {
+      const line = block.split(/\r?\n/).find(function (item) { return item.indexOf("data:") === 0; });
+      if (!line) return;
+      const raw = line.slice(5).trim();
+      if (!raw || raw === "[DONE]") return;
+      let packet;
+      try { packet = JSON.parse(raw); } catch (e) { return; }
+      if (packet.error) throw new Error(packet.code || "AI_STREAM_ERROR");
+      if (typeof packet.delta === "string") {
+        fullText += packet.delta;
+        typing.innerHTML = escapeHtml(fullText).replace(/\n/g, "<br>");
+        log.scrollTop = log.scrollHeight;
+      }
+    }
+
+    while (true) {
+      const part = await reader.read();
+      if (part.done) break;
+      buffer += decoder.decode(part.value, { stream: true });
+      buffer = buffer.replace(/\r\n/g, "\n");
+      let boundary;
+      while ((boundary = buffer.indexOf("\n\n")) !== -1) {
+        const block = buffer.slice(0, boundary);
+        buffer = buffer.slice(boundary + 2);
+        consumeBlock(block);
+      }
+    }
+    buffer += decoder.decode();
+    if (buffer.trim()) consumeBlock(buffer);
+    if (!fullText.trim()) throw new Error("EMPTY_AI_RESPONSE");
+    return fullText.trim();
+  }
+
+  async function handleUserText(text) {
     const clean = (text || "").trim();
     if (!clean) return;
     msgs.push({ role: "user", text: clean });
     bubble("user", clean);
     budSave(msgs);
-    const typing = bubble("bot", "🌿 <i>thinking…</i>");
-    setTimeout(function () {
-      const reply = budtenderReply(clean);
-      msgs.push({ role: "bot", text: reply.text });
-      typing.innerHTML = reply.text;
-      log.scrollTop = log.scrollHeight;
-      budSave(msgs);
-      renderChips(reply.chips || DEFAULT_CHIPS);
-      speak(reply.text);
-    }, 420);
+    const typing = bubble("bot", "🌿 <i>GanjaGuru is thinking…</i>");
+    let reply;
+    let cloudUsed = false;
+    try {
+      const cloudText = await requestCloudReply(clean, typing);
+      reply = { text: escapeHtml(cloudText).replace(/\n/g, "<br>"), chips: null };
+      cloudUsed = true;
+    } catch (error) {
+      // Keep the local expert system available when cloud AI is unavailable.
+      const reason = error && error.message ? error.message : "AI_API_UNAVAILABLE";
+      const statusMessages = {
+        AI_NOT_CONFIGURED: "Local knowledge mode · cloud API key is missing",
+        AI_INVALID_KEY: "Local knowledge mode · cloud API key was rejected",
+        AI_RATE_LIMITED: "Local knowledge mode · cloud AI rate limit reached",
+        AI_SERVICE_UNAVAILABLE: "Local knowledge mode · cloud AI service unavailable",
+        AI_PROVIDER_ERROR: "Local knowledge mode · cloud AI provider error",
+        AI_API_UNAVAILABLE: "Local knowledge mode · API server offline",
+        AI_STREAM_ERROR: "Local knowledge mode · cloud response interrupted",
+        EMPTY_AI_RESPONSE: "Local knowledge mode · cloud returned an empty response"
+      };
+      setModeStatus(statusMessages[reason] || "Local knowledge mode · cloud AI unavailable");
+      reply = budtenderReply(clean);
+    }
+    if (cloudUsed) setModeStatus("GanjaGuru cloud AI response received");
+    msgs.push({ role: "bot", text: reply.text });
+    typing.innerHTML = reply.text;
+    log.scrollTop = log.scrollHeight;
+    budSave(msgs);
+    renderChips(reply.chips || DEFAULT_CHIPS);
+    speak(reply.text);
   }
 
   // restore history or greet
@@ -617,6 +723,7 @@ function initChat() {
     budSave(msgs);
   }
   renderChips(DEFAULT_CHIPS);
+  refreshAiStatus();
 
   form.addEventListener("submit", function (ev) {
     ev.preventDefault();
