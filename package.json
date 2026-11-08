@@ -95,7 +95,8 @@
     "seo:audit": "node -e \"console.log('Run the SEO/AEO checklist in public/SEO.txt and public/AEO.txt')\"",
     "dns:records": "node -e \"console.log('DNS ownership records live in public/DNS-RECORDS.md')\"",
     "assets:check": "node -e \"const f=['public/robots.txt','public/sitemap.xml','public/manifest.json','public/sw.js','public/ads.txt','public/humans.txt','public/security.txt','public/llms.txt','public/requirements.txt','public/SEO.txt','public/AEO.txt','public/META.md','public/Branding-Bible.md','public/DNS-RECORDS.md'];require('fs').readdirSync('public');f.forEach(p=>console.log((require('fs').existsSync(p)?'ok  ':'miss')+p))\"",
-    "api": "node server.js"
+    "api": "node server.js",
+    "check:syntax": "node --check server.js && node --check script.js && node --check vite.config.js"
   },
   "dependencies": {
     "@base44/sdk": "^0.8.54",
