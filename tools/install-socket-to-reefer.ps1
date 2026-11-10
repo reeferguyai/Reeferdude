@@ -4,7 +4,7 @@ $ErrorActionPreference = "Stop"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $ProjectRoot = [IO.Path]::GetFullPath($ProjectRoot)
 if (-not (Test-Path -LiteralPath $ProjectRoot -PathType Container)) { throw "Project folder not found: $ProjectRoot" }
-$branch = "feat/gravity-gone-socket"
+$branch = "main"
 $base = "https://raw.githubusercontent.com/reeferguyai/Reeferdude/" + $branch + "/"
 $temp = Join-Path $env:TEMP ("reeferdude-socket-" + [guid]::NewGuid().ToString("N"))
 $publicDest = Join-Path $ProjectRoot "public\\socket"
